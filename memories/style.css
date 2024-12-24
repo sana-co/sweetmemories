@@ -1,0 +1,81 @@
+/* General Styling for Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f61; /* Warm red color for the header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px; /* Adds some space below the header */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section.photos {
+    padding: 20px;
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Year Section Styling */
+.year-section {
+    margin-bottom: 40px; /* Adds space between each year's section */
+    padding: 15px;
+}
+
+.year-section h3 {
+    font-size: 2em;
+    color: #ff6f61; /* Matching color to header */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap to the next row if necessary */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Centers images horizontally */
+}
+
+/* Image Styling */
+.gallery img {
+    width: 100%;
+    max-width: 300px; /* Maximum width for images */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition on hover */
+}
+
+/* Image Hover Effects */
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
