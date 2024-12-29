@@ -1,0 +1,78 @@
+/* General styles for the favourite page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #ff7f7f;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.favourite-items {
+    margin: 2rem auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.favourite-items h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ff7f7f;
+}
+
+.favourite-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.favourite-items ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.favourite-items ul li strong {
+    color: #ff7f7f;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.back-button button {
+    background-color: #ff7f7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.back-button button:hover {
+    background-color: #e66767;
+}
