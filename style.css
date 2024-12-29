@@ -89,7 +89,7 @@ header p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Button styling */
+/* General Button Styling */
 button {
     background-color: #ff6f61; /* Red color for the button */
     color: white; /* Text color */
@@ -99,15 +99,40 @@ button {
     font-weight: bold; /* Makes the text bold */
     border-radius: 8px; /* Rounded corners */
     cursor: pointer; /* Changes cursor to a pointer on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for multiple effects */
     display: inline-block;
     margin-top: 20px;
+    text-align: center; /* Ensures text is centered inside button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for the button */
 }
 
+/* Hover Effects */
 button:hover {
     background-color: #ff4e41; /* Darker red color on hover */
     transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
 }
+
+/* Focus State */
+button:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 0 4px rgba(255, 111, 97, 0.5); /* Adds custom focus outline */
+}
+
+/* Active State (when clicked) */
+button:active {
+    transform: translateY(2px); /* Push the button slightly down */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow when pressed */
+}
+
+/* Disabled Button */
+button:disabled {
+    background-color: #ddd; /* Light gray for disabled state */
+    color: #aaa; /* Text color for disabled state */
+    cursor: not-allowed; /* No hover effect for disabled button */
+    box-shadow: none; /* Remove shadow when disabled */
+}
+
 
 /* Pop-out Birthday Note Section */
 .birthday-note {
@@ -152,6 +177,16 @@ footer {
     font-size: 1em;
     color: #b30000;
     margin-top: 30px;
+}
+
+/* Favourite Things Section Styling */
+.favourite-things {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Ensures text inside is centered */
+    margin-top: 40px; /* Space from the top */
 }
 
 /* Responsive Design for Mobile */
